@@ -1,0 +1,37 @@
+# Movie_Recommendation_System
+
+Data Set is taken from Kaggle Website.
+This is a data set of 10k top-rated TMDB movies till 26-July-2022.
+
+Content
+The Dataset contains the following things:
+
+ID: Movie ID number on the website.
+title: Movie name
+genre: Movie genre (crime, adventure, etc.)
+original_language: Original language in which the movie is released
+overview: Summary of the movie
+popularity: Movie Popularity
+release_date: Movie release date
+vote_average: Movie vote average
+vote_count: Movie vote count
+
+# id,title,genre,overview  - These columns will help in creating the machine learning model.
+
+# IMPORTING MACHINE LEARNING MODULES 
+
+from sklearn.feature_extraction.text import CountVectorizer  # code
+
+NOTES:-
+sklearn - scikit-learn ( Scikit-learn is probably the most useful library for machine learning in Python. The sklearn library contains a lot of efficient tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction. )
+
+What is CountVectorizer in NLP? CountVectorizer is a text preprocessing technique commonly used in natural language processing (NLP) tasks for converting a collection of text documents into a numerical representation. It is part of the scikit-learn library, a popular machine learning library in Python.
+
+CountVectorizer - it converts text into numericals.
+
+what is NLP ?
+---- Natural language processing (NLP) is a machine learning technology that gives computers the ability to interpret, manipulate, and comprehend human language.
+
+#####################################################
+cv = CountVectorizer(max_features=10000, stop_words='english')   # code
+what are the use of the parameters used in above commands ?
